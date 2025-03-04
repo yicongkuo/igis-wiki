@@ -1,0 +1,187 @@
+# Project information
+site_name: "igis-wiki"
+site_description: "ArcGIS工程師入門指南"
+
+# Repository
+# repo_name: yicongkuo/igis-wiki
+# repo_url: https://github.com/yicongkuo/igis-wiki
+
+# Copyright
+copyright: Copyright &copy; 2025 YiCong Kuo
+
+# Configuration
+theme:
+  name: material
+  features:
+    # - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
+    # - content.code.annotate
+    # - content.code.copy
+    # - content.code.select
+    - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    # - navigation.prune    
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple # 佈景主題主色
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: 切換至深色主題
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple # 佈景主題主色
+      accent: purple      
+      toggle:
+        icon: material/brightness-4
+        name: 切換至淺色主題
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
+  # favicon: assets/favicon.png
+  icon:
+    logo: simple/wikipedia
+  language: zh-TW
+
+plugins:
+  # - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Hooks
+# hooks:
+#   - material/overrides/hooks/shortcodes.py
+#   - material/overrides/hooks/translations.py
+
+# Additional configuration
+# extra:
+#   status:
+#     new: Recently added
+#     deprecated: Deprecated
+#   analytics:
+#     provider: google
+#     property: !ENV GOOGLE_ANALYTICS_KEY
+#   social:
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/squidfunk
+#     - icon: fontawesome/brands/docker
+#       link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+#     - icon: fontawesome/brands/python
+#       link: https://pypi.org/project/mkdocs-material/
+#     - icon: fontawesome/brands/bluesky
+#       link: https://bsky.app/profile/squidfunk.bsky.social
+#     - icon: fontawesome/brands/mastodon
+#       link: https://fosstodon.org/@squidfunk
+#     - icon: fontawesome/brands/x-twitter
+#       link: https://x.com/squidfunk
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# not_in_nav: |
+#   /tutorials/**/*.md
+
+# Page tree
+nav:
+  - 首頁: index.md
+  - 快速開始:
+    - quick-start/index.md
+    # - ArcGIS pro:
+    #   - quick-start/pro/index.md
+    # - ArcGIS Online:
+    #   - quick-start/online/index.md
+    # - ArcGIS Enterprise:
+    #   - quick-start/enterprise/index.md
+    #   - 系統建置:
+    #     - quick-start/enterprise/installation/index.md
+    #     - 練習01、基本部署: quick-start/enterprise/installation/exercise-01.md
+    #     - 練習02、分離部署: quick-start/enterprise/installation/exercise-02.md
+    #     - 最佳實踐: quick-start/enterprise/installation/best-practice.md
+    #     - 常見問題: quick-start/enterprise/installation/faq.md
+    #   - 使用入門:
+    #     - quick-start/enterprise/getting-start/index.md
+    # - ArcGIS Location Platform:
+    #   - quick-start/location-platform/index.md
+  # - GIS系統實務:
+  #   - system/index.md
+  #   - 建置:
+  #     - 系統規劃: system/build/plan.md
+  #     - 環境準備: system/build/prepare.md
+  #     - 軟體安裝: system/build/installation.md
+  #     - 功能檢查: system/build/validation.md
+  #     - 故障排除: system/build/troubleshoot.md
+  #   - 管理:
+  #   - 監控:
+  #     - ArcGIS Monitor:
+  - 產品介紹: product-promotion/index.md
