@@ -3,8 +3,8 @@ site_name: "igis-wiki"
 site_description: "ArcGIS工程師入門指南"
 
 # Repository
-# repo_name: yicongkuo/igis-wiki
-# repo_url: https://github.com/yicongkuo/igis-wiki
+repo_name: yicongkuo/igis-wiki
+repo_url: https://github.com/yicongkuo/igis-wiki
 
 # Copyright
 copyright: Copyright &copy; 2025 YiCong Kuo
