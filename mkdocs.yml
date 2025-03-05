@@ -112,6 +112,7 @@ markdown_extensions:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
+  - pymdownx.blocks.caption
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.details
@@ -157,12 +158,18 @@ nav:
   - 首頁: index.md
   - 快速開始:
     - quick-start/index.md
-    # - ArcGIS pro:
-    #   - quick-start/pro/index.md
-    # - ArcGIS Online:
-    #   - quick-start/online/index.md
-    # - ArcGIS Enterprise:
-    #   - quick-start/enterprise/index.md
+    - File Based:
+      - quick-start/filebased/index.md
+      - 什麼是地理資訊系統: quick-start/filebased/gis.md
+    - Database Centric:
+      - quick-start/database/index.md
+    - Server Centric:
+      - quick-start/server/index.md
+      - ArcGIS Server: quick-start/server/arcgis-server.md
+    - Web GIS:
+      - quick-start/webgis/index.md
+
+      
     #   - 系統建置:
     #     - quick-start/enterprise/installation/index.md
     #     - 練習01、基本部署: quick-start/enterprise/installation/exercise-01.md
