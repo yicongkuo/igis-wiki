@@ -64,6 +64,9 @@ theme:
     logo: simple/wikipedia
   language: zh-TW
 
+extra_css:
+  - extra/extra.css
+
 plugins:
   # - blog
   - search:
