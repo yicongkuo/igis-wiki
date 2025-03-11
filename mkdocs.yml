@@ -12,6 +12,7 @@ copyright: Copyright &copy; 2025 GIS俱樂部
 # Configuration
 theme:
   name: material
+  custom_dir: material/overrides
   features:
     # - announce.dismiss
     # - content.action.edit
@@ -171,7 +172,8 @@ nav:
       - ArcGIS Server: quick-start/server/arcgis-server.md
     - Web GIS:
       - quick-start/webgis/index.md
-
+  - 資料大觀園:
+    - 地質敏感區範圍數值檔(SHP): data/GeologicallySensitiveArea.md
       
     #   - 系統建置:
     #     - quick-start/enterprise/installation/index.md
