@@ -7,7 +7,10 @@
     font-size: .8rem;
 }
 
+/* 標記文字 */
 .md-typeset code {
+    background-color: transparent;
+    color: #dd7b12;
     font-size: .8rem;
 }
 
